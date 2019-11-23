@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="js\lib\angular.min.js"></script>
+        <script src="js\main.js"></script>
+        <script src="js\ang_func.js"></script>
+        <link rel="stylesheet" href="css\main.css">
+        <link rel="stylesheet" href="css\animate.css">
+    </head>
+    <body>   
+            <h1 id="descr">English<br>language</h1>
+            <div ng-app="translate-app">
+                <div ng-controller="translate-ctrl">
+                    <input type="text" id="translate-word-area" ng-change="ch_traslate();" ng-model="transWord" placeholder="Please enter your word!">
+                </div>
+            </div>
+    </body>
+</html>

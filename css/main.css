@@ -1,0 +1,43 @@
+*{
+    font-family: Tahoma ;
+}
+body{
+    background-image: url("../img/wall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #120E27;
+    padding: 20%;
+}
+#descr{
+    animation: spawn;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    color: white;
+    font-size: 60px;
+    align-items: center;
+}
+#translate-word-area{
+    animation: spawn;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    align-items: center;
+    padding-left: 3%;
+    margin-bottom: 40px;
+    transform: translateY(-30px);
+}
+
+@keyframes spawn
+{
+    from{
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1.0;
+    }
+}
