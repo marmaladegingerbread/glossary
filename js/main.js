@@ -261,8 +261,7 @@ function dynamicTranslate(){
             break;
         }
         if (translatedWord != ""){
-            alert(translatedWord);
+            let outputTW = document.getElementById("output-translated-words");
+            outputTW.value = translatedWord;
         }
 }
-
-function tester(){alert("pass!!!");}

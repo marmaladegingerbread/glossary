@@ -1,3 +1,4 @@
+@import url("animate.css");
 *{
     font-family: Tahoma ;
 }
@@ -12,32 +13,34 @@ body{
 #descr{
     animation: spawn;
     animation-delay: 0s;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
     color: white;
     font-size: 60px;
     align-items: center;
 }
 #translate-word-area{
+    border-width: 0px;
+    outline: none;
+    background: #120E27;
+    font-size: 23px;
+    color: white;
     animation: spawn;
     animation-delay: 0s;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-iteration-count: 1;
-    border-radius: 7px;
-    border-bottom-left-radius: 0px;
-    border-top-left-radius: 0px;
+    border-radius: 0px;
+    /*border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;*/
     align-items: center;
     padding-left: 3%;
     margin-bottom: 40px;
-    transform: translateY(-30px);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .2);
 }
-
-@keyframes spawn
-{
-    from{
-        opacity: 0.0;
-    }
-    to{
-        opacity: 1.0;
-    }
+#translate-word-area:focus{
+    animation: word-area-focus;  
+    animation-delay: 0s;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    border-radius: 15px; 
 }
