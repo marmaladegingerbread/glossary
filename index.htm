@@ -9,12 +9,12 @@
         <link rel="stylesheet" href="css\animate.css">
     </head>
     <body>   
-            <h1 id="descr">English<br>language</h1>
+            <h1 id="descr">Translate</h1>
             <div ng-app="translate-app">
                 <div ng-controller="translate-ctrl">
-                    <input type="text" id="translate-word-area" ng-change="ch_traslate();" ng-model="transWord" placeholder="Please enter your word!">
+                    <input type="text" id="translate-word-area" ng-change="ch_traslate();" ng-model="transWord" placeholder="English">
                 </div>
-                <output id="output-translated-words"></output>
+                <input type="text" id="output-translated-words" placeholder="Русский" disabled="true">
             </div>
     </body>
 </html>
