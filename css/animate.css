@@ -1,6 +1,6 @@
 @keyframes spawn{
-    from{border-radius: 15px;}
-    to{border-radius: 5px;}
+    from{}
+    to{}
 }
 @keyframes word-area-focus{
     from{
